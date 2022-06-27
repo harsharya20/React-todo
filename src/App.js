@@ -3,6 +3,7 @@ import './App.css';
 import React, {useState} from 'react';
 import Footer from './Components/Footer';
 import ToDos from './Components/ToDos';
+import AddToDo from './Components/AddToDo';
 
 function App() {
   const onDelete=(todo)=>{
@@ -31,6 +32,7 @@ function App() {
   return (
    <>
     <Header title = "My To Do List" searchBar= {false}/>
+    <AddToDo/>
     <ToDos todos={todos} onDelete={onDelete}/>   
     <Footer/>
    </>
