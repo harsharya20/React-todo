@@ -2,8 +2,8 @@
  
  function Footer() {
      let footerStyle = {
-         position: "absolute",
-         top: "95vh",
+         position: "relative",
+         top: "65vh",
          width: "100%",
          border: "2px solid red"
      }
