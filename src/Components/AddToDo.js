@@ -7,9 +7,11 @@ const AddToDo = ({addTodo}) => {
      e.preventDefault()
      if(!title || !desc){
          alert("title or description cannot be blank !!!")
-     }
+     }else{
      addTodo(title,desc)
-    }
+     setTitle("")
+     setDesc("")
+    }}
   return (
     <div className='container my-3 text-center'>
         <h3>Add a Task</h3>
